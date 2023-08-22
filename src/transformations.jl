@@ -40,3 +40,25 @@ function sph2cart(r::Real, θ::Real, φ::Real)
     z = r * cos(θ)
     return [x, y, z]
 end
+
+"""
+# sph2Cart 
+Transforms spherical coordinates to carthesian coordinates
+ 
+## INPUTS
+- r: r coordinate in spherical coordinates, `Real` 
+- θ: theta coordinate in spherical coordinates, `Real`
+- φ: phi coordinate in spherical coordinates, `Real`
+
+## OUTPUTS
+- x: x coordinate, `Real`
+- y: y coordinate, `Real`
+- z: z coordinate, `Real`
+- type: [x, y, z]
+"""
+function cart2cart(x::Real, y::Real, z::Real)
+    x = x
+    y = z
+    z = z
+    return [x, y, z]
+end
